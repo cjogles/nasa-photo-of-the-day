@@ -1,14 +1,22 @@
 import React from "react";
+import styled from 'styled-components';
 function Header(props) {
-    //console.log(props.title);
+    const Title = styled.div`
+        align-text: center;
+        color: white;
+    `
+    const Date = styled.div`
+        align-text: center;
+        color: white;
+    `
     return (
         <div>
-            <div>
+            <Title>
                 {props.title}
-            </div>
-            <div>
+            </Title>
+            <Date>
                 {props.date}
-            </div>
+            </Date>
             <div>
                 <button><span>Display in HD?</span></button>
             </div>
